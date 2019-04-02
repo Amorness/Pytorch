@@ -128,6 +128,14 @@ def LSTM(i,data_input,data_ture):
 
 
 def MLP(i,data_input,data_ture):
+    """
+        通过MLP对 提供的相关属性的真实值 与 目标属性的真实值 进行计算，得到目标属性的预测值
+
+        :param i: 风机编号
+        :param data_input : 需要参与MLP的属性
+        :param data_ture : 需要MLP预测的属性的真实值
+        :return: 发电机前后轴承温度差的实际值与预测值的残差
+        """
 
     inputFea = data_input
     diff_ture = data_ture
